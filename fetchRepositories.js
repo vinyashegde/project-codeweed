@@ -1,11 +1,11 @@
 document.querySelector('form').addEventListener('submit', async event => {
   event.preventDefault();
   document.getElementById('github-repositories').innerHTML = '<div class="d-flex justify-content-center"><div class="spinner-border" role="status"><span class="sr-only">Loading...</span></div></div>';
-  const dataResponse = await fetch(`https://api.github.com/search/repositories?q=${document.getElementById('search').value}`, {headers: {'Authorization': 'Bearer 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'}});
+  const dataResponse = await fetch(`https://api.github.com/search/repositories?q=${document.getElementById('search').value}`, {headers: {'Authorization': 'Bearer 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'}});
   const data = await dataResponse.json();
   let html = '';
   for (const repository of data.items) {
-    const contributorsResponse = await fetch(repository.contributors_url, {headers: {'Authorization': 'Bearer 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'}});
+    const contributorsResponse = await fetch(repository.contributors_url, {headers: {'Authorization': 'Bearer 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'}});
     const contributors = await contributorsResponse.json();
     html += `
       <div class="col-md-4">
