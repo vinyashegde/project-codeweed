@@ -1,0 +1,18 @@
+/* Custom styling for the cards */
+#card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    width: 1500px;
+    height: 250px;
+    margin: 0.5rem;
+}
+
+/* Add custom styling for the spinner */
+#loading-spinner .spinner-border {
+    width: 3rem;
+    height: 3rem;
+}

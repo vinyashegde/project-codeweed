@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>GitHub Repository Search</title>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h1>GitHub Repository Search</h1>
+        <form>
+            <div class="form-group">
+                <label for="repo-search">Enter repository name:</label>
+                <input type="text" class="form-control" id="repo-search" placeholder="e.g. bootstrap">
+            </div>
+            <!-- Add a dropdown to select the programming language filter -->
+            <div class="form-group">
+                <label for="language-filter">Filter by language:</label>
+                <select class="form-control" id="language-filter">
+                    <option value="">All</option>
+                    <option value="JavaScript">JavaScript</option>
+                    <option value="Java">Java</option>
+                    <option value="Python">Python</option>
+                    <option value="PHP">PHP</option>
+                    <option value="C++">C++</option>
+                    <option value="C#">C#</option>
+                    <option value="Ruby">Ruby</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Search</button><br><br>
+        </form>
+
+        <!-- Add a container to hold the cards -->
+        <div id="card-container" class="d-flex flex-row flex-wrap justify-content-between">
+            <!-- Cards will be added here dynamically -->
+        </div>
+
+        <!-- Add a loading spinner while the search is being performed -->
+        <div class="d-flex justify-content-center" id="loading-spinner" style="display: none !important;">
+            <div class="spinner-border" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+
+
+
+        <!-- Your custom JavaScript for the search functionality -->
+        <script src="script.js"></script>
+
+</body>

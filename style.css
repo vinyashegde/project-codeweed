@@ -35,8 +35,9 @@ form input[type="submit"] {
 
 /* Style the horizontal cards */
 .card {
-  width: 300px;
-  border: 1px solid #ccc;
+  background-color: #008acf;
+  width: 350px;
+  border: 1px solid rgb(255, 255, 255);
   border-radius: 5px;
   box-shadow: 2px 2px 5px #ccc;
   margin: 10px;
@@ -57,6 +58,21 @@ form input[type="submit"] {
 
 /* Style the links */
 a {
-  color: #006699;
+  color: #000000;
   text-decoration: none;
+}
+
+#logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 30px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+
+#toggle-mode {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
